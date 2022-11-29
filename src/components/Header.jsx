@@ -1,18 +1,17 @@
 import React from "react";
-import headerStyles from "../styles/header.css";
+import "../styles/header.css";
 import wiicarIcon from "./../icons/wiicar-icon.png";
-import menuIcon from "./../icons/menu.png";
-import turnOffIcon from "./../icons/apagar.png";
-
+import { Icon } from "./Icon";
+import { faNavicon, faPowerOff } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
     return (
         <>
             <nav className="navbar">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">
-                        <img src={menuIcon} alt="menu-icon.png" />
+                    <a className="navbar-brand" href="/#">
+                        <Icon css="nav-icon" icon={faNavicon} />
                     </a>
-                    <a className="navbar-brand" href="#">
+                    <a className="navbar-brand" href="/#">
                         <span>
                             <img
                                 className="logo"
@@ -22,10 +21,9 @@ const Header = () => {
                         </span>
                         <span>Wiicar</span>
                     </a>
-
                     <button>
-                        <img src={turnOffIcon} alt="turnoff-icon.png" />
-                        <a href="#">Salir</a>
+                        <Icon css="poweroff-icon" icon={faPowerOff} />
+                        <a href="/#">Salir</a>
                     </button>
                 </div>
             </nav>
