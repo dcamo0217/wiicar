@@ -12,6 +12,14 @@ button a{
     font-weight: bold;
 }
 
+button a:hover{
+    color: #E63020;
+}
+
+header{
+    background-color: #FFFFFF;
+}
+
 img.logo{
     width: 39px;
     height: 39px;
@@ -28,3 +36,6 @@ img.logo{
     color: #E63020;
 }
 
+span.textIcon{
+    font-weight: bold;
+}

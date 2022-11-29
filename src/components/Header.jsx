@@ -5,7 +5,7 @@ import { Icon } from "./Icon";
 import { faNavicon, faPowerOff } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
     return (
-        <>
+        <header>
             <nav className="navbar">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/#">
@@ -19,7 +19,7 @@ const Header = () => {
                                 alt="logo.png"
                             />
                         </span>
-                        <span>Wiicar</span>
+                        <span className="textIcon">Wiicar</span>
                     </a>
                     <button>
                         <Icon css="poweroff-icon" icon={faPowerOff} />
@@ -27,7 +27,7 @@ const Header = () => {
                     </button>
                 </div>
             </nav>
-        </>
+        </header>
     );
 };
 

@@ -1,13 +1,17 @@
 import React from "react";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 
 const App = () => {
     return (
-        <div>
+        <>
             <Header />
-            <hr style={{ margin: 0 }} />
-        </div>
+            <hr style={{ margin: 0, border: "1px solid #C5CBDA" }} />
+            <Nav />
+            <h1>Home</h1>
+            <Footer />
+        </>
     );
 };
 
