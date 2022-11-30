@@ -1,7 +1,8 @@
 import React from "react";
-import Footer from "./components/Footer";
+import Content from "./components/content/Content";
+import Footer from "./components/footer/Footer";
 import Header from "./components/Header";
-import Nav from "./components/Nav";
+import Nav from "./components/nav/Nav";
 
 const App = () => {
     return (
@@ -9,7 +10,7 @@ const App = () => {
             <Header />
             <hr style={{ margin: 0, border: "1px solid #C5CBDA" }} />
             <Nav />
-            <h1>Home</h1>
+            <Content />
             <Footer />
         </>
     );
