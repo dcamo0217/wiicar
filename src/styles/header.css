@@ -21,7 +21,7 @@ header{
 }
 
 img.logo{
-    width: 39px;
+    width: 166px;
     height: 39px;
     margin: 0 0.5rem;
 }
@@ -38,4 +38,9 @@ img.logo{
 
 span.textIcon{
     font-weight: bold;
+}
+
+header hr {
+    margin: 0;
+    border: "1px solid #C5CBDA" 
 }

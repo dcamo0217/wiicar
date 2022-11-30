@@ -1,6 +1,7 @@
 a.nav-link{
     color: #000000;
     transition: 0s;
+    margin: 0 auto;
 }
 
 a.nav-link:hover{
@@ -9,6 +10,9 @@ a.nav-link:hover{
 
 a.nav-link::before{
     color: #E63020;
+}
+li.nav-item{
+    margin: 0 auto;
 }
 li.nav-item:hover{
     border-bottom: 2px solid #E63020;

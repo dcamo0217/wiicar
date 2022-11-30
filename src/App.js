@@ -5,10 +5,10 @@ import Header from "./components/Header";
 import Nav from "./components/nav/Nav";
 
 const App = () => {
+    // Aqui debe estar el estado con los datos
     return (
         <>
             <Header />
-            <hr style={{ margin: 0, border: "1px solid #C5CBDA" }} />
             <Nav />
             <Content />
             <Footer />
