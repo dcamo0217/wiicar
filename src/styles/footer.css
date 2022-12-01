@@ -1,68 +1,132 @@
-footer {
-    position: absolute;
-    bottom: 0;
+/* Search bar */
+.btn:first-child:active{
     background-color: #FFFFFF;
-    box-shadow: 0px -9px 20px -15px rgb(182, 182, 182);
+    border-top: 1px solid #c5cbda;
+    border-bottom: 1px solid #c5cbda;
+    border-right: 1px solid #c5cbda;
+}
+button.searchBtn,
+button.searchBtn:hover {
+    border-top: 1px solid #c5cbda;
+    border-bottom: 1px solid #c5cbda;
+    border-right: 1px solid #c5cbda;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    background-color: #ffffff;
 }
 
-.input-cont{
+button .search-icon {
+    color: black;
+}
+
+.input-cont {
     width: 100%;
     max-width: 384px;
 }
 
-input.search-input{
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #ffffff;
+    box-shadow: 0px -9px 20px -15px rgb(182, 182, 182);
+}
+
+input.search-input {
     border-radius: 20px;
     border: 1px 1px 1px 0 solid #000000;
-    color: #C5CBDA;
+    color: #c5cbda;
 }
 
-button.searchBtn{
-    border-top: 1px solid #C5CBDA;
-    border-bottom: 1px solid #C5CBDA;
-    border-right: 1px solid #C5CBDA;
-    border-left: none;
-    border-radius: 0 20px 20px 0;
-    background-color: #FFFFFF;
+/* Results Dropdown */
+.resultados button {
+    border: 1px solid #c5cbda;
+    background-color: #ffffff;
+    color: #e63020;
 }
-button.searchBtn:hover{
-    border-top: 1px solid #C5CBDA;
-    border-bottom: 1px solid #C5CBDA;
-    border-right: 1px solid #C5CBDA;
-    border-left: none;
-
-    background-color: #FFFFFF;
+.resultados button:hover {
+    border: 1px solid #c5cbda;
+    background-color: #ffffff;
+    color: #e63020;
 }
+.resultados button:active {
+    border: 1px solid #c5cbda;
+    background-color: #ffffff;
+    color: #e63020;
 
-button .search-icon{
-    color: black;
 }
-
-.resultados button{
-    border: 1px solid #C5CBDA;
-    background-color: #FFFFFF;
-    color:#E63020;
+form.results-form {
+    border: 1px solid rgb(182, 182, 182);
+    padding: 5px;
+    border-radius: 50px;
+}
+form.results-form label {
+    margin-right: 25px;
+    background-color: #fdeae8;
+    color: #e63020;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 19px;
+    font-size: 14px;
+}
+form.results-form select {
+    border: none;
+    width: 60px;
     
 }
-.resultados button:hover{
-    border: 1px solid #C5CBDA;
-    background-color: #FFFFFF;
-    color:#E63020;
+
+/* Pagination */
+button.pag-button {
+    border: none;
 }
-.resultados button:active{
-    border: 1px solid #C5CBDA;
-    background-color: #FFFFFF;
-    color:#E63020;
+.pag-cont {
+    display: flex;
+    align-items: center;
 }
-.acciones button{
-    background-color:#E63020;
+.pag-cont span {
+    margin-right: 12px;
+}
+.pag-count {
+    border: 1px solid #c5cbda;
+    margin: 0 1rem;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    opacity: 1;
+    padding: 9px 34px;
+}
+.pag-count p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Action dropdown */
+.acciones button,
+.acciones button:hover  {
+    background-color: #e63020;
     border: none;
     width: 283px;
     padding: 0.5rem 3rem;
     border-radius: 50px;
-
 }
-.acciones button:hover{
-    background-color:#FFFFFF;
-    border: 1px solid #E63020;
-    color:#E63020;
+.acciones button.btn.show
+{
+    background-color: #ffffff;
+    border: 1px solid #e63020;
+    color: #e63020;
+}
+.acciones ul{
+    padding:0;
+}
+.acciones li{
+    width: 283px;
+    padding: 11px;
+}
+.acciones li:hover{
+    background-color: rgb(242,243,247);
+    border-radius: 5px;
+}
+.acciones .btn:first-child:active{
+    background-color: #e63020;
+}
+.dropdown-item:hover{
+    background-color: transparent;
 }
