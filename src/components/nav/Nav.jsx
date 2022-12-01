@@ -9,7 +9,12 @@ import iconVend from "./../../assets/img/money-bill-transfer-regular.svg";
 const Nav = () => {
     return (
         <>
-            <ul className="nav justify-content-around">
+            <ul
+                className="nav justify-content-around"
+                style={{
+                    overflow: "scroll",
+                }}
+            >
                 <NavItem icon={iconPrep} name="Preparación" />
                 <NavItem icon={iconAlm} name="Almacenamiento" />
                 <NavItem icon={iconVent} name="En venta" />
