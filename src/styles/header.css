@@ -25,6 +25,11 @@ img.logo{
     height: 39px;
     margin: 0 0.5rem;
 }
+img.icon{
+    width: 40px;
+    margin: 0 0.5rem;
+    display: none;
+}
 
 .poweroff-icon {
     width: 16px;
@@ -43,4 +48,27 @@ span.textIcon{
 header hr {
     margin: 0;
     border: "1px solid #C5CBDA" 
+}
+
+@media screen and (max-width: 450px) {
+    button a{
+        display: none;
+}
+    button .poweroff-icon{
+        margin:0;
+        width: 100%;
+}
+.navbar>.container-fluid {
+    margin: 0;
+    width: 100%;
+
+
+}
+
+img.logo{
+    display: none;
+}
+img.icon{
+    display: inline-block;
+}
 }
