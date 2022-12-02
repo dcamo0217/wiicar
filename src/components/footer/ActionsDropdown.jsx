@@ -1,7 +1,12 @@
 import React from "react";
-import * as XLSX from "xlsx";
+import PropTypes from "prop-types";
 
-const ActionsDropdown = () => {
+const ActionsDropdown = ({ content, setContent }) => {
+    // Here we are using the useState hook to set the state of the content variable.
+    const changeContent = () => {
+        setContent(true);
+    };
+
     return (
         <>
             <div className="dropdown acciones">
@@ -19,7 +24,11 @@ const ActionsDropdown = () => {
                     aria-labelledby="dropdownMenuButton1"
                 >
                     <li>
-                        <a className="dropdown-item" href="/#">
+                        <a
+                            className="dropdown-item"
+                            href="/#"
+                            onClick={changeContent}
+                        >
                             Cargue masivo
                         </a>
                     </li>
@@ -32,6 +41,11 @@ const ActionsDropdown = () => {
             </div>
         </>
     );
+};
+
+ActionsDropdown.propTypes = {
+    content: PropTypes.bool.isRequired,
+    setContent: PropTypes.func.isRequired,
 };
 
 export default ActionsDropdown;

@@ -1,14 +1,19 @@
+div.content-body {
+    width: 100%;
+
+    margin: 8rem auto;
+}
+
 div.content-container {
-    background-color: #FFFFFF;
-    margin: 2rem auto;
-    border: 1px solid #C5CBDA;
+    background-color: #ffffff;
+    border: 1px solid #c5cbda;
     border-radius: 6px;
     width: 90%;
 }
 
 div.table-container {
-    background-color: #F2F3F7;
-    border: 1px solid #c5cbda;  
+    background-color: #f2f3f7;
+    border: 1px solid #c5cbda;
     border-radius: 6px;
     margin: 14px 0;
 }
@@ -18,6 +23,13 @@ div.table-container {
     margin: 15px 0;
     text-align: center;
     padding: 0;
-    color: #C5CBDA;
+    color: #c5cbda;
     font-size: 14px;
+}
+
+/* Responsive */
+@media screen and (max-width: 580px) {
+    .content-body {
+        margin: 8rem auto 14rem auto !important;
+    }
 }

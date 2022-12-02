@@ -1,8 +1,10 @@
 import React from "react";
+
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { Icon } from "../Icon";
 
 const SearchBar = () => {
+    // Here we have the search bar component.
     return (
         <>
             <div className="input-group p-3 input-cont">

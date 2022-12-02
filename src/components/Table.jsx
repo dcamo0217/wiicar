@@ -1,8 +1,10 @@
 import React from "react";
 import DataTable from "react-data-table-component";
-import { useSelector } from "react-redux";
+
+import carsData from "../assets/data/carsdata.json";
 
 const Table = () => {
+    // This component is going to be used to render the table that is going to be used in the application using DataTable library.
     const columns = [
         {
             name: "ID",
@@ -51,7 +53,7 @@ const Table = () => {
         },
     ];
 
-    const data = [];
+    const data = carsData;
 
     return (
         <>

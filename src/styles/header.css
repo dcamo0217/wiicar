@@ -1,74 +1,76 @@
-button{
+button {
     border-radius: 50px;
     background: transparent;
     padding: 6px 15px;
-    border: 2px solid #E63020;
+    border: 2px solid #e63020;
     display: flex;
     align-items: center;
 }
-button a{
+button a {
     text-decoration: none;
-    color: #E63020;
+    color: #e63020;
     font-weight: bold;
 }
 
-button a:hover{
-    color: #E63020;
+button a:hover {
+    color: #e63020;
 }
 
-header{
-    background-color: #FFFFFF;
+header {
+    background-color: #ffffff;
 }
 
-img.logo{
+header hr {
+    margin: 0;
+    border: "1px solid #C5CBDA";
+}
+
+img.logo {
     width: 166px;
     height: 39px;
     margin: 0 0.5rem;
 }
-img.icon{
+img.icon {
     width: 40px;
     margin: 0 0.5rem;
     display: none;
 }
 
+.nav-icon {
+    color: #e63020;
+}
+
 .poweroff-icon {
     width: 16px;
     height: 16px;
-    margin: 0 12px 0 0; 
-    color:#E63020;  
-}
-.nav-icon{
-    color: #E63020;
+    margin: 0 12px 0 0;
+    color: #e63020;
 }
 
-span.textIcon{
+span.textIcon {
     font-weight: bold;
 }
 
-header hr {
-    margin: 0;
-    border: "1px solid #C5CBDA" 
-}
-
+/* Responsive */
 @media screen and (max-width: 450px) {
-    button a{
+    button a {
         display: none;
-}
-    button .poweroff-icon{
-        margin:0;
+    }
+
+    button .poweroff-icon {
+        margin: 0;
         width: 100%;
-}
-.navbar>.container-fluid {
-    margin: 0;
-    width: 100%;
+    }
+    .navbar > .container-fluid {
+        margin: 0;
+        width: 100%;
+    }
 
+    img.logo {
+        display: none;
+    }
 
-}
-
-img.logo{
-    display: none;
-}
-img.icon{
-    display: inline-block;
-}
+    img.icon {
+        display: inline-block;
+    }
 }

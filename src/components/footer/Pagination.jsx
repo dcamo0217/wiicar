@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 
 const Pagination = () => {
+    // Here we are using the useState hook to set the state of the counter.
     const [counter, setCounter] = useState(1);
 
+    // in this function we are going to increase the counter by one.
     const increment = () => {
         setCounter(counter + 1);
     };
+    // in this function we are going to decrease the counter by one.
     const decrement = () => {
         if (counter > 1) {
             setCounter(counter - 1);
@@ -22,7 +25,6 @@ const Pagination = () => {
             </div>
             <span>De</span>
             <span>1000</span>
-
             <button className="pag-button" onClick={increment}>
                 {" "}
                 &gt;

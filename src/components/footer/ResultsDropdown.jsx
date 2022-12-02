@@ -2,6 +2,7 @@ import React from "react";
 import "./../../styles/footer.css";
 
 const ResultsDropdown = () => {
+    // Here we have the results dropdown component.
     return (
         <>
             <form className="results-form" action="">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Content from "./components/Content";
 import Footer from "./components/footer/Footer";
@@ -8,12 +8,23 @@ import Nav from "./components/nav/Nav";
 const App = () => {
     // Aqui debe estar el estado con los datos
 
+    const [content, setContent] = useState(false);
+
     return (
         <>
-            <Header />
-            <Nav />
-            <Content />
-            <Footer />
+            <div
+                style={{
+                    position: "fixed",
+                    top: 0,
+                    zIndex: "1",
+                    width: "100%",
+                }}
+            >
+                <Header setContent={setContent} />
+                <Nav />
+            </div>
+            <Content content={content} />
+            <Footer content={content} setContent={setContent} />
         </>
     );
 };
