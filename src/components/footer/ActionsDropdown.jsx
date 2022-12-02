@@ -4,7 +4,7 @@ import * as XLSX from "xlsx";
 const ActionsDropdown = () => {
     return (
         <>
-            <div className="dropdown mb-3 acciones">
+            <div className="dropdown acciones">
                 <button
                     className="btn btn-secondary dropdown-toggle"
                     type="button"

@@ -1,6 +1,7 @@
 import React from "react";
 import "./../styles/header.css";
-import wiicarIcon from "./../assets/img/wiicar.png";
+import wiicarIcon from "./../assets/img/wiicaricon.png";
+import wiicarLogo from "./../assets/img/wiicarlogo.png";
 import { Icon } from "./Icon";
 import { faNavicon, faPowerOff } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
@@ -13,8 +14,13 @@ const Header = () => {
                     </a>
                     <a className="navbar-brand" href="/#">
                         <img
-                            className="logo"
+                            className="icon"
                             src={wiicarIcon}
+                            alt="wiicar-icon"
+                        />
+                        <img
+                            className="logo"
+                            src={wiicarLogo}
                             alt="wiicar-icon"
                         />
                     </a>

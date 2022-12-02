@@ -4,7 +4,7 @@ import "./../../styles/footer.css";
 const ResultsDropdown = () => {
     return (
         <>
-            <form className="results-form mb-3" action="">
+            <form className="results-form" action="">
                 <label htmlFor="title-form">Resultados</label>
                 <select name="pages" id="pages">
                     <option value="10">10</option>
