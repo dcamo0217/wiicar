@@ -8,7 +8,7 @@ const Content = ({ content }) => {
     return (
         <div className="content-body">
             <div className="container content-container">
-                {content == true ? (
+                {content === true ? (
                     <Table />
                 ) : (
                     <div className="container table-container">
